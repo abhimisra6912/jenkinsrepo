@@ -1,0 +1,47 @@
+Status: FAILED
+Time Taken: 308
+Size: 138
+Timestamp: Thu Jul 01 10:21:28 IST 2021
+TestStep: POST_PetCreation_Step
+
+----------------- Messages ------------------------------
+[JSONPath Match] Comparison failed for path [$['category']['name']], expecting ["Candy"], actual was []
+[Contains] Missing token [Labra] in Response
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://petstore.swagger.io
+Method: POST
+StatusCode: 200
+URL: https://petstore.swagger.io/v2/pet
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Host: [petstore.swagger.io]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [197]
+Content-Type: [application/json]
+
+POST https://petstore.swagger.io/v2/pet HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 197
+Host: petstore.swagger.io
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Server: [Jetty(9.2.9.v20150224)]
+Access-Control-Allow-Origin: [*]
+Access-Control-Allow-Methods: [GET, POST, DELETE, PUT]
+Connection: [keep-alive]
+#status#: [HTTP/1.1 200 OK]
+Date: [Thu, 01 Jul 2021 04:51:30 GMT]
+Access-Control-Allow-Headers: [Content-Type, api_key, Authorization]
+Content-Type: [application/json]
+
+{"id":9223372000000072247,"category":{"id":0,"name":""},"name":"","photoUrls":["string"],"tags":[{"id":0,"name":""}],"status":"available"}
